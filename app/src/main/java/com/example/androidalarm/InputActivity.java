@@ -47,6 +47,7 @@ public class InputActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input);
         setTitle("New MedicineModel");
+        System.out.println("starting input activity");
         //getting component object
         medicinename=findViewById(R.id.name);
         medicineDosage=findViewById(R.id.dosage);

@@ -21,11 +21,12 @@ public class activity_alert extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alert);
+        System.out.println("opening alert activity");
 
         //getting data from intent
 
        int id =getIntent().getIntExtra("id",0);
-     //   System.out.println("the id in activity alert is "+id);
+        System.out.println("the id in activity alert is "+id);
 
          mediaPlayer = MediaPlayer.create(activity_alert.this, R.raw.notify);
         mediaPlayer.setLooping(true);

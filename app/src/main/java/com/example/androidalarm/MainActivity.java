@@ -14,6 +14,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.androidalarm.database.DBHandler;
 import com.example.androidalarm.database.MedicineModel;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<String> medicineTime=new ArrayList<>();
     FloatingActionButton addBtn;
     private MediaPlayer mMediaPlayer;
+    TextView noDataMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setTitle("Android Alarm");
         //add btn
-
-        addBtn =findViewById(R.id.addBtn);
+        noDataMessage=findViewById(R.id.noDataMessage);
+         addBtn =findViewById(R.id.addBtn);
           addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,25 +87,31 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData() {
 
+//list length
+        //if len=0 then show message "No medicine"
 
         List<MedicineModel> mn=getData();
-        for(MedicineModel model:mn){
 
-            medicineName.add(model.getMedicineName());
-            medicineDosage.add(model.getMedicineDosage());
-            medicineTime.add(model.getMedicineTime());
-            medicineType.add(model.getMedicineType());
+        if(mn.isEmpty()){
+            noDataMessage.setVisibility(View.VISIBLE);
 
-            if(model.getMedicineType().equals("Capsule")) {
-                imageId.add(R.drawable.capsule);
-            }else{
-                imageId.add(R.drawable.bottle);
+        }else {
+            noDataMessage.setVisibility(View.INVISIBLE);
+            for (MedicineModel model : mn) {
+                medicineName.add(model.getMedicineName());
+                medicineDosage.add(model.getMedicineDosage());
+                medicineTime.add(model.getMedicineTime());
+                medicineType.add(model.getMedicineType());
+
+                if (model.getMedicineType().equals("Capsule")) {
+                    imageId.add(R.drawable.capsule);
+                } else {
+                    imageId.add(R.drawable.bottle);
+                }
             }
+            initRecyclerView();
         }
 
-
-
-        initRecyclerView();
     }
 
     private void initRecyclerView() {
