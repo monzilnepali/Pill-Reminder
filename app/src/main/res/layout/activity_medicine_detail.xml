@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    tools:context=".activity_medicineDetail">
+
+    <ImageView
+        android:id="@+id/type"
+        android:layout_width="279dp"
+        android:layout_height="254dp"
+        android:layout_gravity="center" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textColor="@color/textGrey"
+
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="22dp"
+            android:layout_marginBottom="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dosage"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textColor="@color/textGrey"
+
+            />
+        <TextView
+            android:id="@+id/dosage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="22dp"
+            android:layout_marginBottom="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textColor="@color/textGrey"
+
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="22dp"
+            android:layout_marginBottom="20dp"
+
+            />
+
+
+
+
+
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:text="DELETE"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey"
+        />
+
+</LinearLayout>

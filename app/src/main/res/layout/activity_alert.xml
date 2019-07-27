@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000032"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+
+    tools:context=".activity_alert">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Your Medicine"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/gradient_background"
+            android:orientation="vertical"
+           android:paddingTop="80dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Name"
+
+                />
+
+
+            <TextView
+                android:id="@+id/medicineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Medicine Name"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="normal"
+                android:layout_marginBottom="30dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Dosage"
+                />
+
+
+            <TextView
+                android:id="@+id/medicineDosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Medicine Dosage"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="normal"
+                android:layout_marginBottom="30dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Time"
+                />
+
+
+            <TextView
+                android:id="@+id/medicineTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Medicine Time"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="normal"
+                android:layout_marginBottom="30dp"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_shape"
+            android:layout_gravity="top|center"/>
+
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="156dp"
+        android:layout_height="59dp"
+        android:background="@drawable/round"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="OK" />
+
+
+
+
+
+
+
+</LinearLayout>

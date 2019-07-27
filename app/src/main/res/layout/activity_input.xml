@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".InputActivity">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Medicine Name" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/dosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Medicine Dosage" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Spinner
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+
+
+        />
+    <android.support.design.chip.ChipGroup
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/addTimeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Add Time"/>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/addMedicineBtn"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:text="Add"/>
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="Cancel"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+
+</LinearLayout>
