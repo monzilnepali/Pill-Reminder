@@ -1,3 +1,3 @@
 # Pill-Remainder
 
-![Home screen](https://i.ibb.co/JBhr6bp/Screenshot-20190807-123026-We-Care.jpg | width=200)
+![Home screen](https://i.ibb.co/JBhr6bp/Screenshot-20190807-123026-We-Care.jpg){:height="50%" width="50%"}
